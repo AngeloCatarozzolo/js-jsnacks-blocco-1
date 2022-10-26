@@ -3,12 +3,14 @@
 
 const invitati = ['Roberto','Luca','Giovanni','Marco'];
 const checkInvitati = prompt('Inserisci il tuo nome');
+let found = false;
+
 for(let i=0 ; i < invitati.length ; i++){
     if(checkInvitati.toLowerCase() === invitati[i].toLowerCase()){
         flag = true;
     }
 }
-if(flag){
+if(found){
     console.log('Benvenuto');
 }else{
     console.log('Attenzione! Non sei stato invitato!')
